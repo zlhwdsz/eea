@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="zk-eea",
+    name="zkeea",
     version="1.0.0",
     author="He Weidong",
     author_email="zlhwd@qq.com",
@@ -18,5 +18,8 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.6',  # 对python的最低版本要求
+    dependency_links=[
+        "https://github.com/numpy/numpy",
+    ],
+    python_requires='>=3.6',
 )
