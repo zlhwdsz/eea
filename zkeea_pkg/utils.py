@@ -22,3 +22,10 @@ def sieve_of_eratosthenes(n):
             for j in range(i * i, n + 1, i):
                 primes[j] = False
     return [x for x in range(n + 1) if primes[x]]
+
+def euclidean_division(a, b):
+    quotient, remainder = divmod(a, b)
+    if remainder < 0:
+        remainder += abs(b)
+        quotient += 1
+    return quotient, remainder

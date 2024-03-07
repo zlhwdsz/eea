@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="zkeea",
-    version="1.0.1",
+    version="1.0.2",
     author="He Weidong",
     author_email="zlhwd@qq.com",
     description="Extended Euclidean Algorithm",
